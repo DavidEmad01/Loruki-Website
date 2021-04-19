@@ -16,6 +16,10 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -184,7 +188,7 @@ pre {
 
 .stats {
     padding-top: 100px;
-    animation: slideInFromBottom 1s ease-in;
+    /* animation: slideInFromBottom 1s ease-in; */
 }
 
 .stats-heading {
@@ -428,6 +432,32 @@ pre {
     .features-main .grid .card {
         grid-column: 1;
     }
+
+    .features-main .container .card:first-of-type {
+        flex-direction: column;
+    }
+
+    .docs-main .container .card {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .docs-main .container .card:last-of-type {
+        text-align: center;
+    }
+
+    .footer.py-5 {
+        padding: 20px;
+    }
+
+    .footer .grid {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .footer .flex {
+        justify-content: center;
+        grid-column: span 2;
+    }
 }
 
 /* End Tablets and Under */
@@ -446,6 +476,18 @@ pre {
     .navbar ul {
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .showcase .container .showcase-form {
+        width: 120%;
+    }
+
+    .cli img {
+        width: 350px;
+    }
+
+    .languages .flex {
+        flex-direction: column;
     }
 }
 
